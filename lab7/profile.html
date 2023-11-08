@@ -1,0 +1,40 @@
+<html>
+<head> <title>7th page </title>
+</head>
+<body>
+    <script>
+        function myfuntion(){
+            var a = document.getElementById("name").value;           for(i= 0; i<a.length; i++){
+              if(a == " ")
+              alert("enter name");
+            return false;
+           }
+         return true;
+        }
+
+        var img= document.forms['myform']['browse'];
+        var validExtension =["jpeg", "png", "jpg"];
+        function myfunction(){
+
+            if(img.value!=''){
+             var pos = img.value.substring(img.value.lastIndexOf('.'+1));
+             
+            }
+            else{
+                alert("no file selected");
+                return false;
+            }
+        }
+      </script>
+<fieldset>
+<form name = "form" onclick="return myfunction()">
+Profile Picture <br>
+User Id <input type ="text" id ="name">  <br>
+<u>Picture <input type ="file" name=" browse"></u> <br>
+<input type="submit" value="submit">
+
+</form>
+</fieldset>
+
+</body>
+</html>

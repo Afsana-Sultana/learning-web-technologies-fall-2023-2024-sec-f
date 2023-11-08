@@ -1,0 +1,26 @@
+<html>
+<head> <title> 5th page</title>
+</head>
+<body>
+    <script>
+        function myfuntion(){
+           var a= document.forms.degree;
+           for(i= 0; i<a.length; i++){
+              if(a[i].checked== true)
+              return true;
+           }
+         document.getElementById("message").innerHTML="please select one";
+         return false;
+        }
+      </script>
+<fieldset>
+ <form name="forms" onsubmit=" return myfuntion()">
+Degree <br>
+<input type ="checkbox" name="degree"> SSC 
+<input type ="checkbox" name="degree"> HSC 
+<input type ="checkbox" name="degree"> BSc  <br>
+<button> Submit </button>
+</form>
+</fieldset>
+</body>
+</html>

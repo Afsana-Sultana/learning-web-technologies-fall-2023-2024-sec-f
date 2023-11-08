@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <title>Login</title>
+</head>
+<body>
+    <script>
+
+        function nameFun(){
+        var a = document.getElementById("username").value;
+        var logic = /^[A-Za-z]+$/;
+        if(a == " "){
+            document.getElementById("message").innerHTML="null name";
+            return false;
+        }
+        if(a.length<3){
+            document.getElementById("message").innerHTML="name should be at least 2 letters";
+            return false;
+        }
+        if(a.match(logic))
+           true;
+        else{
+            document.getElementById("message").innerHTML="enter alphabets";
+            return false;
+        }
+} 
+    
+    </script>
+
+        <form onsubmit = "return nameFun()"> 
+            Name: <input type="text" id ="username" value=" " /> 
+            <span id = "message"></span><br>
+                  <input type="submit" value="submit" />
+        </form>
+</body>
+</html>

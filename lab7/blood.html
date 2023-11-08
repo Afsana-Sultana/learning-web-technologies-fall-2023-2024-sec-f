@@ -1,0 +1,36 @@
+<html>
+<head> <title> 6th page</title>
+</head>
+<body>
+    <script>
+        function myfuntion(){
+           var a= document.getElementById('select').value;
+           
+          if(a=="blood group+"){
+            alert("select actor");
+            return false;
+          }
+        return true;
+        }
+      </script>
+
+
+    <form name=" form" onsubmit=" return myfuntion()">
+        <u>
+Blood Group <select id = "select">
+<option value="blood group+">A+</option>
+<option>B+</option>
+<option>O+</option>
+<option>AB+</option>
+<option>A-</option>
+<option>B-</option>
+<option>O-</option>
+<option>AB-</option>
+<select>
+</u>
+<br>
+<button> Submit </button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>2nd page</title>
+</head>
+<body>
+    <script>
+        function emailFun(){
+        var a = document.form.Email.value;
+        if(a.indexOf('@')<=0){
+            document.getElementById("message").innerHTML="invalid";
+            return false;
+       }
+        if(a == " "){
+            document.getElementById("message").innerHTML="null email";
+            return false;
+        }
+} 
+    
+    </script>
+	<form name="form" onsubmit = "return emailFun()">
+		Email:
+		<input type="text" name="Email" value=" "><acronym title= "hint: sample@example.com">i</acronym>
+        <span id = "message"></span><br>
+        <input type="submit" value="submit">
+	</form>
+
+</body>
+</html>
