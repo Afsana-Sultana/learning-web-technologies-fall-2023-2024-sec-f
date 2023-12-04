@@ -1,0 +1,2 @@
+This is a simple registartion form to take users into database, after registration users can login, if user is valid they are redirected to home page.
+it is checked if email is taken or not, each unique email is used for registration.
